@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ring: theme(colors.brand.DEFAULT);
+}
+
+.container-nice {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 rounded-2xl px-4 py-2 font-medium transition;
+}
+
+.btn-primary {
+  @apply bg-brand text-brand-fg hover:bg-brand/90 active:scale-[.98] shadow-lg shadow-brand/20;
+}
+
+.card {
+  @apply rounded-2xl bg-neutral-900/60 border border-neutral-800 p-5 hover:bg-neutral-900 transition;
+}
+
+.h1 {
+  @apply text-4xl md:text-5xl font-bold tracking-tight;
+}
+
+.h2 {
+  @apply text-2xl md:text-3xl font-semibold;
+}
+
+.muted {
+  @apply text-neutral-400;
+}
+
+/* Compact mode for all pages except Home & Navbar */
+.compact section {
+  @apply py-6; /* reduce vertical padding */
+}
+
+.compact .card {
+  @apply p-4 text-sm space-y-2;
+}
+
+.compact h1, .compact .h1 {
+  @apply text-2xl font-bold;
+}
+
+.compact h2, .compact .h2 {
+  @apply text-xl font-semibold;
+}
+
+.compact h3, .compact .h3 {
+  @apply text-lg font-semibold;
+}
+
+.compact p {
+  @apply text-sm;
+}
+
+.compact .btn {
+  @apply px-3 py-1 text-sm rounded-lg;
+}
