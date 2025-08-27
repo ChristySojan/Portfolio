@@ -62,3 +62,7 @@
 .compact .btn {
   @apply px-3 py-1 text-sm rounded-lg;
 }
+
+html {
+  zoom: 1.2; 
+}
