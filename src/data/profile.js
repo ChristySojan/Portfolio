@@ -99,6 +99,10 @@ export const profile = {
     {
       name: "SQL (Intermediate) – HackerRank",
       link: "https://www.hackerrank.com/certificates/ecc214481042"
+    },
+    {
+      name: "SQL (Basic) – HackerRank",
+      link: "https://www.hackerrank.com/certificates/5fee661bd186",
     }
   ]
 }
